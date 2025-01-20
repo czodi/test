@@ -3,138 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site moderne inspiré par Epic Games">
-    <meta name="keywords" content="portfolio, design, modern, epic games">
+    <meta name="description" content="GD Place - Trouvez vos sites préférés">
+    <meta name="keywords" content="GD Place, Recherche de sites, Boutons interactifs">
     <meta name="author" content="Votre Nom">
-    <title>Portfolio Modernisé</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>GD Place</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pusab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ADAM+CG+PRO&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: 'ADAM CG PRO', sans-serif;
             color: white;
-            background: #0f0f0f;
+            background: linear-gradient(to right, green 10%, blue 90%);
+            text-align: center;
         }
 
         header {
-            background: linear-gradient(135deg, #1e1e1e, #333);
-            padding: 20px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            padding: 20px;
+            background: #1e1e1e;
         }
 
         header h1 {
-            color: #ff6700;
-            text-align: center;
-            margin: 0;
+            font-family: 'Pusab', sans-serif;
             font-size: 2.5rem;
+            color: white;
+            margin: 0;
             text-transform: uppercase;
         }
 
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-            margin: 15px 0 0 0;
+        main {
+            padding: 20px;
         }
 
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2rem;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #ff6700;
-        }
-
-        .hero {
-            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-        }
-
-        .hero h2 {
-            font-size: 3rem;
-            margin: 0;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-
-        .btn {
-            margin-top: 20px;
-            padding: 15px 30px;
-            font-size: 1.2rem;
-            background: #ff6700;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-
-        .btn:hover {
-            background: #e65c00;
-        }
-
-        #portfolio {
-            padding: 50px 20px;
-            background: #1a1a1a;
-            text-align: center;
-        }
-
-        #portfolio h2 {
-            font-size: 2.5rem;
-            color: #ff6700;
-        }
-
-        #portfolio p {
-            margin-bottom: 30px;
-            font-size: 1.2rem;
-        }
-
-        .portfolio-grid {
+        .site-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
+            margin-top: 30px;
         }
 
-        .portfolio-item {
-            width: 300px;
-            overflow: hidden;
+        .site {
+            background: #1e1e1e;
             border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease;
         }
 
-        .portfolio-item:hover {
+        .site:hover {
             transform: scale(1.05);
         }
 
-        .portfolio-item img {
+        .site img {
             width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .site a {
             display: block;
+            text-decoration: none;
+            font-family: 'ADAM CG PRO', sans-serif;
+            font-size: 1.2rem;
+            color: #00ff00;
+            padding: 15px;
+            transition: background 0.3s ease;
+        }
+
+        .site a:hover {
+            background: #ff6700;
+            color: white;
         }
 
         footer {
             background: #0f0f0f;
             color: #666;
-            text-align: center;
             padding: 20px 0;
+            margin-top: 50px;
         }
 
         footer p {
@@ -145,45 +92,36 @@
 <body>
     <!-- En-tête -->
     <header>
-        <h1>czodi</h1>
-        <nav>
-            <ul>
-                <li><a href="https://www.youtube.com/@czodi/videos">YouTube</a></li>
-                <li><a href="https://czodi.carrd.co/">Portfolio</a></li>
-            </ul>
-        </nav>
+        <h1>GD Place</h1>
     </header>
 
-    <!-- Section Accueil -->
-    <section class="hero" id="accueil">
-        <div>
-            <h2>Bienvenue sur mon site</h2>
-            <p>Explorez mes projets et découvez mes réalisations.</p>
-            <a href="#portfolio" class="btn">Voir le Portfolio</a>
-        </div>
-    </section>
+    <!-- Section Principale -->
+    <main>
+        <h2>Recherchez et explorez des sites GD</h2>
+        <div class="site-container">
+            <!-- GD Creators -->
+            <div class="site">
+                <img src="https://via.placeholder.com/300x200" alt="GD Creators">
+                <a href="https://www.gdcreatorschool.com/home" target="_blank">GD Creators</a>
+            </div>
 
-    <!-- Section Portfolio -->
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Voici quelques exemples de mes travaux récents :</p>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="https://via.placeholder.com/300" alt="Projet 1">
+            <!-- Song File Hub -->
+            <div class="site">
+                <img src="https://via.placeholder.com/300x200" alt="Song File Hub">
+                <a href="https://songfilehub.com/home" target="_blank">Song File Hub</a>
             </div>
-            <div class="portfolio-item">
-                <img src="https://via.placeholder.com/300" alt="Projet 2">
-            </div>
-            <div class="portfolio-item">
-                <img src="https://via.placeholder.com/300" alt="Projet 3">
+
+            <!-- GD Browser -->
+            <div class="site">
+                <img src="https://via.placeholder.com/300x200" alt="GD Browser">
+                <a href="https://gdbrowser.com/" target="_blank">GD Browser</a>
             </div>
         </div>
-    </section>
+    </main>
 
     <!-- Pied de page -->
     <footer>
-        <p>&copy;hello im czodi</p>
+        <p>&copy; 2025 GD Place. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
-
