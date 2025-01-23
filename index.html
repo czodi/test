@@ -3,125 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GD Place - Trouvez vos sites préférés">
-    <meta name="keywords" content="GD Place, Recherche de sites, Boutons interactifs">
-    <meta name="author" content="Votre Nom">
-    <title>GD Place</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pusab&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=ADAM+CG+PRO&display=swap" rel="stylesheet">
+    <title>czodi</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
-            font-family: 'ADAM CG PRO', sans-serif;
-            color: white;
-            background: linear-gradient(to right, green 10%, blue 90%);
-            text-align: center;
+            padding: 0;
+            background-color: #f9f9f9;
         }
-
         header {
-            padding: 20px;
-            background: #1e1e1e;
-        }
-
-        header h1 {
-            font-family: 'Pusab', sans-serif;
-            font-size: 2.5rem;
+            background-color: #1c2d83;
             color: white;
-            margin: 0;
-            text-transform: uppercase;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        .site-container {
+            padding: 10px 20px;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
+            justify-content: space-between;
+            align-items: center;
         }
-
-        .site {
-            background: #1e1e1e;
-            border-radius: 10px;
-            overflow: hidden;
-            width: 300px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
+        header img {
+            height: 50px;
         }
-
-        .site:hover {
-            transform: scale(1.05);
+        header nav {
+            display: flex;
+            gap: 15px;
         }
-
-        .site img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .site a {
-            display: block;
-            text-decoration: none;
-            font-family: 'ADAM CG PRO', sans-serif;
-            font-size: 1.2rem;
-            color: #00ff00;
-            padding: 15px;
-            transition: background 0.3s ease;
-        }
-
-        .site a:hover {
-            background: #ff6700;
+        header nav a {
             color: white;
+            text-decoration: none;
         }
-
-        footer {
-            background: #0f0f0f;
-            color: #666;
-            padding: 20px 0;
-            margin-top: 50px;
+        .banner {
+            background-color: #002f71;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
         }
-
-        footer p {
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+        }
+        .sidebar a {
+            display: block;
+            color: #1c2d83;
+            text-decoration: none;
+            padding: 10px 0;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        .content {
+            width: 75%;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .content h2 {
+            color: #1c2d83;
+        }
+        .box {
+            border: 1px solid #d3d3d3;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #f7f7f7;
+        }
+        .box h3 {
             margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .box p {
+            font-size: 14px;
+            margin: 10px 0 0;
+            color: #555;
+        }
+        .indication {
+            background-color: #f3e7ff;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #d1c4e9;
+        }
+        .indication a {
+            color: #1c2d83;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <!-- En-tête -->
-    <header>
-        <h1>GD Place</h1>
-    </header>
 
-    <!-- Section Principale -->
-    <main>
-        <h2>Recherchez et explorez des sites GD</h2>
-        <div class="site-container">
-            <!-- GD Creators -->
-            <div class="site">
-                <img src="https://via.placeholder.com/300x200" alt="GD Creators">
-                <a href="https://www.gdcreatorschool.com/home" target="_blank">GD Creators</a>
-            </div>
+<header>
+    <div>
+        <img src="logo.png" alt="welcome to my ugly website"> <!-- Placeholder logo -->
+        <strong>bro bro goo goo</strong>
+    </div>
+    <nav>
+        <a href="#">idk</a>
+        <a href="#">idk</a>
+        <a href="#">idk</a>
+        <a href="#">made by czodi</a>
+    </nav>
+</header>
 
-            <!-- Song File Hub -->
-            <div class="site">
-                <img src="https://via.placeholder.com/300x200" alt="Song File Hub">
-                <a href="https://songfilehub.com/home" target="_blank">Song File Hub</a>
-            </div>
+<div class="banner">
+    just no
+</div>
 
-            <!-- GD Browser -->
-            <div class="site">
-                <img src="https://via.placeholder.com/300x200" alt="GD Browser">
-                <a href="https://gdbrowser.com/" target="_blank">GD Browser</a>
+<div class="container">
+    <div class="sidebar">
+        <a href="#">tempete</a>
+        <a href="#">citron</a>
+        <a href="#">natrist</a>
+        <a href="#">znak</a>
+        <a href="#" style="font-weight: bold;">fuck</a>
+        <a href="#">i love mango</a>
+        <a href="#">no actually</a>
+        <a href="#">stfu</a>
+        <a href="#">i quit</a>
+    </div>
+
+    <div class="content">
+        <h2>fuck</h2>
+
+        <div class="box">
+            <h3>man</h3>
+            <p>sooooooo how is life doing?</p>
+            <p><strong>ok hell nah</strong></p>
+        </div>
+
+        <div class="box">
+            <h3>i was wondering</h3>
+            <div class="indication">
+                <a href="#">why are you reading allat</a><br>
+                <a href="#">am i crazy or you are still there</a>
             </div>
         </div>
-    </main>
+    </div>
+</div>
 
-    <!-- Pied de page -->
-    <footer>
-        <p>&copy; 2025 GD Place. Tous droits réservés.</p>
-    </footer>
 </body>
 </html>
